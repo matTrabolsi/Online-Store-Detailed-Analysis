@@ -15,7 +15,7 @@ def fetch_data_from_sql():
     )
 
     conn = pyodbc.connect(conn_str)
-    query = "SELECT ReviewID, CustomerID, ProductID, Rating, ReviewText FROM customer_reviews"
+    query = "SELECT ReviewID, CustomerID, ProductID, Rating, ReviewDate, ReviewText FROM customer_reviews"
 
     df = pd.read_sql(query, conn)
 
