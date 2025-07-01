@@ -81,3 +81,21 @@ print(customer_reviews_df.head())
 
 #(index=false) rmove pandas default extra indexing 
 customer_reviews_df.to_csv('fact_customer_reviews_with_sentiment.csv', index=False) 
+
+#to update the data base with a new table 
+from sqlalchemy import create_engine
+
+server = 'DESKTOP-BA94EQH\SQLEXPRESS'
+database = 'PortfolioProject_MarketingAnalytics'
+
+engine = create_engine(
+    f"mssql+pyodbc://{server}/{database}?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes",
+    fast_executemany=True
+)
+
+customer_reviews_df.to_sql(
+    name='fact_customer_reviews_with_sentiment',
+    con=engine,
+    if_exists='replace',
+    index=False
+)
