@@ -3,7 +3,7 @@
 This project showcases a full-cycle marketing analytics workflow using **SQL, Python**, and **Power BI**. It focuses on understanding customer behavior, analyzing campaign effectiveness, and uncovering patterns in customer feedback through **sentiment analysis**.
 ---
 
-![Dashboard Preview](dashboard-image.png)
+![Dashboard Preview](projectFiles/dashboard-image.png)
 
 ---
 
@@ -85,11 +85,11 @@ Using **Python and the NLTK VADER** sentiment analyzer, we processed textual rev
 
 ## 📊 Dashboard Preview
 
-![Dashboard Preview](dashboard-image1.png)
+![Dashboard Preview](projectFiles/dashboard-image1.png)
 
 ---
 
-![Dashboard Preview](dashboard-image2.png)
+![Dashboard Preview](projectFiles/dashboard-image2.png)
 
 ---
 
